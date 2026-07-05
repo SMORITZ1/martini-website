@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 980" preserveAspectRatio="none">
+  <defs>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".82" numOctaves="4" seed="18" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0.78 0 0 0 0 0.68 0 0 0 0 0.48 0 0 0 .18 0"/>
+    </filter>
+    <filter id="water" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency=".012 .026" numOctaves="4" seed="7" result="turb"/>
+      <feDisplacementMap in="SourceGraphic" in2="turb" scale="32" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <radialGradient id="centerLight" cx="54%" cy="34%" r="58%">
+      <stop offset="0" stop-color="#fffdf6" stop-opacity=".82"/>
+      <stop offset=".52" stop-color="#fff9ed" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#fff9ed" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldLine" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#b38c31" stop-opacity=".9"/>
+      <stop offset=".58" stop-color="#b38c31" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#b38c31" stop-opacity=".16"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="980" fill="#f4ead9"/>
+  <rect width="1440" height="980" fill="#b89b62" opacity=".16" filter="url(#paper)"/>
+  <rect width="1440" height="980" fill="#fff7e9" opacity=".34"/>
+  <rect width="1440" height="980" fill="url(#centerLight)"/>
+
+  <g filter="url(#water)" opacity=".72">
+    <path d="M-78 630C36 594 126 622 200 704C268 778 356 790 458 776C366 864 224 934 28 972C-82 904-118 760-78 630Z" fill="#536a42" opacity=".48"/>
+    <ellipse cx="62" cy="790" rx="244" ry="170" fill="#60784b" opacity=".42"/>
+    <ellipse cx="178" cy="898" rx="258" ry="112" fill="#8b9a70" opacity=".3"/>
+    <ellipse cx="1092" cy="116" rx="248" ry="156" fill="#788a63" opacity=".32"/>
+    <ellipse cx="1210" cy="92" rx="136" ry="98" fill="#9ca987" opacity=".24"/>
+    <ellipse cx="1318" cy="796" rx="208" ry="138" fill="#73875f" opacity=".18"/>
+  </g>
+
+  <g filter="url(#water)" opacity=".28">
+    <path d="M-46 684C108 638 206 710 316 754C210 790 102 800-42 770Z" fill="#3f5735"/>
+    <path d="M936 42C1038 0 1148 16 1248 98C1166 152 1044 160 936 118Z" fill="#6c7f5d"/>
+  </g>
+
+  <path d="M-50 706 C 116 756 228 808 384 802 C 568 796 732 762 908 800 C 1098 842 1268 806 1492 700"
+        fill="none" stroke="url(#goldLine)" stroke-width="1.6" opacity=".74"/>
+  <path d="M-20 728 C 142 770 260 844 430 836 C 632 828 752 788 940 828 C 1120 866 1272 830 1492 730"
+        fill="none" stroke="#c19a36" stroke-width=".7" opacity=".22"/>
+
+  <g fill="#b58b28" opacity=".42">
+    <circle cx="25" cy="114" r="1.6"/>
+    <circle cx="44" cy="158" r="1.1"/>
+    <circle cx="84" cy="132" r=".9"/>
+    <circle cx="31" cy="92" r=".8"/>
+    <circle cx="76" cy="180" r=".75"/>
+    <circle cx="128" cy="106" r=".7"/>
+    <circle cx="1042" cy="80" r="1.3"/>
+    <circle cx="1082" cy="128" r="1.8"/>
+    <circle cx="1138" cy="154" r="1.1"/>
+    <circle cx="1168" cy="188" r=".9"/>
+    <circle cx="1214" cy="114" r="1.4"/>
+    <circle cx="1070" cy="92" r=".8"/>
+    <circle cx="1118" cy="98" r=".7"/>
+    <circle cx="1196" cy="166" r=".85"/>
+    <circle cx="121" cy="548" r="1.5"/>
+    <circle cx="172" cy="618" r="1"/>
+    <circle cx="245" cy="668" r=".9"/>
+    <circle cx="92" cy="616" r=".8"/>
+    <circle cx="202" cy="702" r=".7"/>
+    <circle cx="1098" cy="624" r="1.1"/>
+    <circle cx="1186" cy="666" r="1.5"/>
+    <circle cx="1288" cy="600" r=".9"/>
+  </g>
+</svg>
