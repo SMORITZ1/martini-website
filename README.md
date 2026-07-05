@@ -4,6 +4,12 @@ Kleine Hochzeits-Webseite fuer `martini-era.de`.
 
 Aktueller Stand: minimale Coming-soon-Seite fuer das erste Cloudflare-Pages-Deployment.
 
+## Design
+
+Die visuelle Richtung orientiert sich am Einladungskartenentwurf: Creme, Gold, Olive/Sage, elegante Serifentypografie und Martini-Motiv.
+
+- [Designreferenz](docs/design-reference.md)
+
 ## Deployment
 
 - Hosting: Cloudflare Pages

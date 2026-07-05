@@ -29,3 +29,9 @@ Oberste Arbeitsregel: pragmatisch bleiben, nichts unnoetig gross machen und nur 
 - Responsive Darstellung auf Smartphone und Rechner.
 - Inhalte und Darstellung einfach trennen, aber keine unnoetige Architektur einfuehren.
 - Externe Services nur einbinden, wenn sie fuer den aktuellen Schritt gebraucht werden.
+
+## Designreferenz
+
+- Primaere Referenz ist der Entwurf der Einladungskarte.
+- Visuelle Richtung: cremefarbener Papierlook, feine goldene Linien, Sage-/Olive-Gruen, elegante Serifentypografie, Martini-/Oliven-Motiv, florale Akzente.
+- Details sind in `docs/design-reference.md` dokumentiert.
