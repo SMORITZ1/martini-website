@@ -22,6 +22,9 @@ Oberste Arbeitsregel: pragmatisch bleiben, nichts unnoetig gross machen und nur 
 - Domain: `martini-era.de`, registriert bei IONOS.
 - Produktionsbranch: `main`.
 - Feature Branches oder Pull Requests dienen als Preview.
+- Aktuelle Pages-URL: `https://martini-website.pages.dev/`.
+- Cloudflare-Zone fuer `martini-era.de` ist angelegt, Custom Domain wartet auf IONOS-Nameserver-Wechsel.
+- Ziel-Nameserver bei IONOS: `bradley.ns.cloudflare.com` und `peaches.ns.cloudflare.com`.
 
 ## Technische Leitplanken
 
