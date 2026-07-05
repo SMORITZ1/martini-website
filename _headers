@@ -1,3 +1,7 @@
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/*.ics
+  Content-Type: text/calendar; charset=utf-8
+  Content-Disposition: attachment; filename="martini-era-kalenderblocker.ics"

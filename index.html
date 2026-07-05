@@ -67,7 +67,13 @@
             </p>
 
             <div class="hero-actions" aria-label="Schnelleinstieg">
-              <a href="#wann-und-wo">Zurueckkommen &amp; informiert bleiben</a>
+              <a
+                href="assets/martini-era-kalenderblocker.ics"
+                download
+                aria-label="Kalenderblocker fuer die Hochzeit herunterladen"
+              >
+                In den Kalender eintragen
+              </a>
             </div>
           </div>
 
@@ -87,7 +93,7 @@
               data-event-label="17.07.2027 um 14:00 Uhr"
               aria-live="polite"
             >
-              <p class="countdown-label">Countdown</p>
+              <p class="countdown-label">Noch bis zu unserem Tag</p>
               <div class="countdown-grid" aria-label="Countdown bis zur Hochzeit">
                 <span>
                   <strong data-countdown-days>--</strong>
@@ -106,24 +112,27 @@
                   Sek.
                 </span>
               </div>
-              <p class="countdown-note" data-countdown-note>
-                Der Countdown laeuft bis zum 17.07.2027 um 14:00 Uhr.
-              </p>
+              <div class="countdown-flourish" aria-hidden="true">
+                <span class="countdown-leaf countdown-leaf-left"></span>
+                <span class="countdown-heart"></span>
+                <span class="countdown-leaf countdown-leaf-right"></span>
+              </div>
             </div>
           </aside>
         </div>
 
         <div class="event-ledger" aria-label="Eckdaten">
-          <span data-icon="date">17.07.2027<br>13:30 Uhr Ankunft</span>
-          <span data-icon="place">Trauung<br>Mettmann</span>
-          <span data-icon="glass">17:00 Uhr<br>Sektempfang</span>
-          <span data-icon="heart">Party<br>Open end</span>
+          <span data-icon="calendar">17.07.2027<br>13:30 Uhr Ankunft</span>
+          <span data-icon="pin">Trauung Mettmann<br>Party Solingen</span>
+          <span data-icon="dress">Dresscode<br>Schick / tanzbar</span>
+          <span data-icon="heart"><strong class="ledger-pleasure">IT WOULD BE<br>OUR PLESCHER!</strong></span>
         </div>
         <div class="floral floral-left" aria-hidden="true"></div>
         <div class="floral floral-right" aria-hidden="true"></div>
       </section>
 
       <section class="section-shell snap-section" id="wann-und-wo" data-section-nav>
+        <div class="section-silhouette" aria-hidden="true"></div>
         <div class="section-heading">
           <p class="section-kicker">01 / Wann und Wo?</p>
           <h2>Trauung in Mettmann, Feier im Wasserschloss.</h2>
@@ -214,6 +223,7 @@
       </section>
 
       <section class="section-shell snap-section" id="ablauf" data-section-nav>
+        <div class="section-silhouette" aria-hidden="true"></div>
         <div class="section-heading">
           <p class="section-kicker">02 / Ablauf</p>
           <h2>Ein Tag, klar getaktet.</h2>
@@ -303,6 +313,7 @@
       </section>
 
       <section class="section-shell snap-section" id="anreise-und-unterkunft" data-section-nav>
+        <div class="section-silhouette" aria-hidden="true"></div>
         <div class="section-heading">
           <p class="section-kicker">03 / Anreise und Unterkunft</p>
           <h2>Erst die Route, spaeter die Details.</h2>
@@ -330,6 +341,7 @@
       </section>
 
       <section class="section-shell dresscode-section snap-section" id="dresscode" data-section-nav>
+        <div class="section-silhouette" aria-hidden="true"></div>
         <div class="section-heading dresscode-heading">
           <p class="section-kicker">04 / Dresscode</p>
           <h2>Dresscode mit Luft zum Tanzen.</h2>
@@ -343,22 +355,28 @@
         <div class="dresscode-editorial">
           <p class="dresscode-line">Ein bisschen Schloss, ein bisschen Sommerabend.</p>
 
-          <div class="dresscode-scale" aria-label="Dresscode Orientierung von leger bis festlich">
-            <span>zu leger</span>
-            <div class="dresscode-track" aria-hidden="true">
-              <span class="dresscode-range"></span>
-              <span class="dresscode-pin">eher hier</span>
-            </div>
-            <span>festlich</span>
+          <div class="dresscode-cues" aria-label="Dresscode Orientierung">
+            <article class="dresscode-cue">
+              <span>Nicht der Plan</span>
+              <h3>zu leger</h3>
+              <p>Jeans, Jogginghose und Sportlook bleiben bitte zuhause.</p>
+            </article>
+            <article class="dresscode-cue is-target">
+              <span>Unser Ziel</span>
+              <h3>schick, sommerlich, tanzbar</h3>
+              <p>Festlich genug fuer Schloss und Feier, bequem genug fuer den langen Abend.</p>
+            </article>
+            <article class="dresscode-cue">
+              <span>Gern gesehen</span>
+              <h3>festlich</h3>
+              <p>Kleid, Jumpsuit, Sakko, Hemd, Chino oder Stoffhose passen gut.</p>
+            </article>
           </div>
 
           <div class="dresscode-copy">
             <p>
-              <strong>Gerne:</strong> Kleid, Jumpsuit, schicker Zweiteiler,
-              Sakko, Hemd, Chino oder Stoffhose.
-            </p>
-            <p>
-              <strong>Bitte nicht:</strong> Jeans, Jogginghose oder Sportlook.
+              <strong>Kurz gesagt:</strong> Lieber etwas schicker als zu
+              casual, aber bitte so, dass ihr euch den ganzen Abend wohlfuehlt.
             </p>
             <p class="dresscode-colors">
               <strong>Farben:</strong> Weiss und Rot lassen wir an diesem Tag
@@ -371,6 +389,7 @@
       </section>
 
       <section class="section-shell snap-section" id="faq" data-section-nav>
+        <div class="section-silhouette" aria-hidden="true"></div>
         <div class="section-heading">
           <p class="section-kicker">05 / FAQ</p>
           <h2>Kurze Antworten fuer spaeter.</h2>

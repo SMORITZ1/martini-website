@@ -29,28 +29,18 @@ function updateCountdown() {
   }
 
   const eventDateValue = countdown.dataset.eventDate;
-  const eventDateLabel = countdown.dataset.eventLabel || "dem Hochzeitstag";
   const daysElement = countdown.querySelector("[data-countdown-days]");
   const hoursElement = countdown.querySelector("[data-countdown-hours]");
   const minutesElement = countdown.querySelector("[data-countdown-minutes]");
   const secondsElement = countdown.querySelector("[data-countdown-seconds]");
-  const noteElement = countdown.querySelector("[data-countdown-note]");
 
   if (!eventDateValue) {
-    if (noteElement) {
-      noteElement.textContent =
-        "Sobald das Datum feststeht, zaehlt dieser Bereich automatisch mit.";
-    }
     return;
   }
 
   const eventDate = new Date(eventDateValue);
 
   if (Number.isNaN(eventDate.getTime())) {
-    if (noteElement) {
-      noteElement.textContent =
-        "Das hinterlegte Datum ist noch nicht im erwarteten Format.";
-    }
     return;
   }
 
@@ -62,7 +52,6 @@ function updateCountdown() {
     if (hoursElement) hoursElement.textContent = "00";
     if (minutesElement) minutesElement.textContent = "00";
     if (secondsElement) secondsElement.textContent = "00";
-    if (noteElement) noteElement.textContent = "Heute ist es soweit.";
     return;
   }
 
@@ -77,10 +66,6 @@ function updateCountdown() {
   if (hoursElement) hoursElement.textContent = formatNumber(hours);
   if (minutesElement) minutesElement.textContent = formatNumber(minutes);
   if (secondsElement) secondsElement.textContent = formatNumber(seconds);
-  if (noteElement) {
-    noteElement.textContent =
-      `Der Countdown aktualisiert sich automatisch bis zum ${eventDateLabel}.`;
-  }
 }
 
 updateCountdown();

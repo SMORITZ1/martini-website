@@ -6,6 +6,12 @@ Das finale Design liegt noch nicht vor. Die technische Arbeit muss deshalb desig
 
 Der aktuelle Zwischenstand orientiert sich an Designvorschlag 1: rechte vertikale Glasnavigation, grosse editorial gesetzte Startseite, transparente Countdown- und Inhaltsflaechen, ruhiger Creme-/Olive-/Gold-Hintergrund mit Martini- und Olivenakzenten.
 
+Der Hintergrund ist als austauschbares SVG-Bild umgesetzt. Er imitiert eine warme Papierflaeche mit gruenen Aquarellwaschungen, feinen Goldlinien, Sprenkeln und dezenten Olivenzweigen, damit die Seite der aktuellen Designvorlage naeherkommt ohne ein schweres Bitmap fest einzubauen.
+
+Mobile Anpassung: Die Abschnittsnavigation liegt als kleinere Overlay-Leiste ueber dem Inhalt statt als breite rechte Randspalte. Der untere Abschluss zeigt ein klares Martini-Glas. Die Paar-Silhouette bleibt mobil als dezentes Hintergrundmotiv sichtbar.
+
+Die Inhaltsabschnitte koennen dezente Silhouetten als dekorative Hintergrundmotive tragen. Aktuell wird die transparente Paarzeichnung aus dem Hero wiederverwendet; spaeter kann pro Abschnitt ueber CSS-Variablen ein eigenes Motiv gesetzt werden.
+
 ## Design-Leitplanken bis zum finalen Design
 
 - Neutraler Zwischenstil, der spaeter leicht ersetzt werden kann.
@@ -22,6 +28,7 @@ Der aktuelle Zwischenstand orientiert sich an Designvorschlag 1: rechte vertikal
 - FAQ als Akkordeon oder klare Fragenliste.
 - Beziehungsgeschichte als Timeline, Kapitel oder Foto-Story.
 - Ortsinformationen mit Karte-Link, Adresse und optionalen Park-/Hotelhinweisen.
+- Austauschbare Silhouetten pro Inhaltsabschnitt als ruhiges Wasserzeichen.
 - Ruhiger Footer mit Kontakt und optionalen Zusatzlinks.
 
 ## Bildkonzept
@@ -44,5 +51,6 @@ Pruefpunkte:
 - Komponenten erhalten klare semantische Namen.
 - Inhalte liegen in eigenen Datenstrukturen.
 - CSS-Variablen werden zentral gehalten.
+- Abschnittsillustrationen werden als dekorative Layer eingebunden, nicht als inhaltstragende Bilder.
 - Bildformate und Seitenverhaeltnisse werden frueh definiert.
 - Animationen bleiben optional und respektieren reduzierte Bewegung.

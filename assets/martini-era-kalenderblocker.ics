@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Martini Era//Hochzeit//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:martini-era-hochzeit-20270717@martini-era.de
+DTSTAMP:20260705T000000Z
+DTSTART:20270717T113000Z
+DTEND:20270718T000000Z
+SUMMARY:Martini Era - Hochzeit
+LOCATION:Trauung Mettmann\, Feier Wasserschloss Hackhausen\, Solingen
+DESCRIPTION:13:30 Uhr Ankunft der Gaeste zur Trauung in Mettmann. Ab 17:00 Uhr
+ Feier im Wasserschloss Hackhausen in Solingen.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

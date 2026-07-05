@@ -72,3 +72,45 @@ Dieses Log haelt technische und organisatorische Entscheidungen fest. Statuswert
 - Kontext: Nach mehreren visuellen Iterationen gefaellt eine Mischung aus klassischer Einladung und moderner Glasoptik besser als ein hartes, kartenlastiges Layout.
 - Entscheidungsvorschlag: Vorschlag 1 wird als primaere Richtung umgesetzt: rechte vertikale Glas-Timeline, grosser editorialer Hero, Portraitzeichnung ohne harten Rahmen, Countdown als schwebende Glas-Karte und einzelne Eckdaten-Pills.
 - Konsequenz: Die Seite wirkt moderner und naeher am Martini-Motto, bleibt aber durch reduzierte Hintergrundmuster ruhiger als das reine Mockup.
+
+## D-011: Countdown-Detailstil
+
+- Status: Entschieden
+- Kontext: Der Countdown und die weiteren Inhaltsboxen sollen naeher an die Liquid-Glass-Referenz ruecken; unterhalb der Countdown-Zahlen soll kein erklaerender Text stehen.
+- Entscheidung: Countdown, Eckdaten, Inhaltskarten, Timeline-Boxen, FAQ, Kartenlinks und Map-Container erhalten gemeinsame Glas-Layer; unter den Countdown-Zahlen steht nur eine dekorative Blatt-Herz-Zeile.
+- Konsequenz: Der Hero und die Detailbereiche wirken einheitlicher; der Glasstil kann spaeter zentral ueber CSS-Tokens weiter angepasst werden.
+
+## D-012: Reduzierte Kartenwirkung
+
+- Status: Entschieden
+- Kontext: Die Seite wirkte durch viele grosse Glasrahmen, starke Schatten und kapselartige Navigation zu stark wie eine Praesentationsfolie.
+- Entscheidung: Farben, Logos und Bildmotive bleiben erhalten; Hero und Inhaltsbereiche werden ueber leichtere Linien, weniger Schatten, kleinere Radien und ruhigere Listen-/Editorial-Strukturen gefuehrt. Der Countdown behaelt als gezielter Akzent den Liquid-Glass-Stil.
+- Konsequenz: Die Seite wirkt weniger kartenlastig und bleibt trotzdem in der bisherigen Martini-Era-Designrichtung anpassbar.
+
+## D-013: Kalenderblocker als statische Datei
+
+- Status: Entschieden
+- Kontext: Gaeste sollen den Hochzeitstermin direkt aus dem Hero heraus in ihren Kalender uebernehmen koennen.
+- Entscheidung: Der Hero-Button laedt eine statische `.ics`-Datei herunter. Der Termin startet am 17.07.2027 um 13:30 Uhr und blockiert bis 02:00 Uhr am Folgetag.
+- Konsequenz: Keine externe Kalenderintegration und kein Formular sind noetig; die Uhrzeiten koennen spaeter direkt in der ICS-Datei angepasst werden.
+
+## D-014: Austauschbare Abschnitts-Silhouetten
+
+- Status: Entschieden
+- Kontext: Die Paar-Silhouette aus dem Hero soll auf den weiteren Seiten auftauchen, spaeter aber je Abschnitt durch eigene Motive ersetzt werden koennen.
+- Entscheidung: Inhaltsabschnitte erhalten einen dekorativen Silhouetten-Layer. Das Motiv wird per CSS-Variable gesetzt und aktuell auf die transparente Hero-Zeichnung gemappt.
+- Konsequenz: Die Seiten wirken gestalterisch verbundener, ohne Inhalt und Bildauswahl hart zu koppeln. Neue Silhouetten koennen spaeter abschnittsweise ueber CSS ersetzt werden.
+
+## D-016: Papeterie-Hintergrund als SVG-Asset
+
+- Status: Entschieden
+- Kontext: Der Hintergrund soll der aktuellen Designvorlage naeherkommen: warmes Papier, olivgruene Aquarellflaechen, feine Goldlinien und dezente botanische Akzente.
+- Entscheidung: Der Hintergrund bleibt ein austauschbares SVG-Asset statt eines schweren Bitmaps. CSS-Variablen steuern Groesse und Position fuer Desktop und Mobile.
+- Konsequenz: Die Optik ist naeher an der Vorlage, bleibt klein, skalierbar und kann spaeter ohne Layoutmigration gegen ein finales Bitmap oder eine neue Illustration ersetzt werden.
+
+## D-015: Dresscode im hellen Editorial-Stil
+
+- Status: Entschieden
+- Kontext: Der Dresscode-Abschnitt wirkte als dunkle gruene Sonderseite nicht mehr wie der Rest der aktuellen Designrichtung.
+- Entscheidung: Der Abschnitt wird wieder im hellen Creme-/Olive-/Gold-Stil gefuehrt. Die Skala von "zu leger" bis "festlich" wird durch drei lineare Orientierungspunkte ersetzt.
+- Konsequenz: Der Abschnitt bleibt naeher an den anderen Inhaltsseiten und erklaert die gewuenschte Kleidung ohne Slider- oder Leistenoptik.

@@ -11,6 +11,7 @@
 - Die erste Content-Version bleibt statisch und ohne CMS.
 - Inhalte werden in kleinen Abschnitten eingebaut und direkt lokal geprueft.
 - Echte Namen, Orte, Zeiten und Links kommen aus euren Inputs; Platzhalter werden nur eingesetzt, wenn sie klar als Platzhalter erkennbar sind.
+- Die Hero-Eckdaten zeigen aktuell: Datum/Ankunft, Trauung Mettmann und Party Solingen, Dresscode "Schick / tanzbar" sowie die englische Zeile "IT WOULD BE OUR PLESCHER!" in Caps und fett.
 
 ## Inputpakete
 
