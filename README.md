@@ -17,6 +17,6 @@ Aktueller Stand: minimale Coming-soon-Seite fuer das erste Cloudflare-Pages-Depl
 Fuer die aktuelle statische Version:
 
 - Framework preset: `None`
-- Build command: leer lassen
+- Build command: `exit 0`
 - Build output directory: `/`
 - Root directory: leer lassen
