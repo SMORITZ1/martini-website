@@ -18,7 +18,7 @@ Die visuelle Richtung orientiert sich am Einladungskartenentwurf: Creme, Gold, O
 - Arbeitsbranches: `feature/*`
 - Domain: `martini-era.de`
 - Live Preview: `https://martini-website.pages.dev/`
-- Cloudflare Custom Domain: vorbereitet, wartet auf Nameserver-Wechsel bei IONOS
+- Cloudflare Custom Domain: `martini-era.de` ist in Pages angelegt und wird verifiziert
 
 ## Cloudflare Pages Build Settings
 
@@ -31,14 +31,20 @@ Fuer die aktuelle statische Version:
 
 ## Domain Setup
 
-Cloudflare-Zone fuer `martini-era.de` ist angelegt. Bei IONOS muessen die Nameserver auf Cloudflare umgestellt werden:
+Cloudflare-Zone fuer `martini-era.de` ist aktiv. Die IONOS-Nameserver wurden am 05.07.2026 auf Cloudflare umgestellt:
 
 - `bradley.ns.cloudflare.com`
 - `peaches.ns.cloudflare.com`
 
-Aktuelle IONOS-Nameserver, die ersetzt werden sollen:
+Alte IONOS-Nameserver, die ersetzt wurden:
 
 - `ns1029.ui-dns.com`
 - `ns1036.ui-dns.biz`
 - `ns1047.ui-dns.org`
 - `ns1117.ui-dns.de`
+
+Cloudflare DNS enthaelt fuer die Webseite den Root-Record:
+
+- `martini-era.de` -> `martini-website.pages.dev` als proxied CNAME
+
+Bis Cloudflare Pages die Custom Domain final aktiviert hat, bleibt `https://martini-website.pages.dev/` die stabile Vorschau.
