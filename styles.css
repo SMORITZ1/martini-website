@@ -91,6 +91,11 @@ a {
   color: inherit;
 }
 
+.is-startseite-only .timeline-nav,
+.is-startseite-only .section-shell {
+  display: none;
+}
+
 .timeline-nav {
   position: fixed;
   top: 50%;
