@@ -993,6 +993,21 @@ h1 {
   border: 0;
 }
 
+.schedule-note {
+  max-width: 780px;
+  margin: 32px 0 0 calc(180px + clamp(30px, 5vw, 64px));
+  padding: 16px 18px;
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--color-muted);
+  background: var(--surface-liquid-glass-soft);
+  line-height: 1.6;
+}
+
+.schedule-note strong {
+  color: var(--color-ink);
+}
+
 .program-timeline {
   position: relative;
   display: grid;
@@ -1165,16 +1180,6 @@ h1 {
 
 .dresscode-cue.is-target {
   background: linear-gradient(180deg, rgba(169, 135, 55, 0.09), transparent);
-}
-
-.dresscode-cue.is-target::before {
-  position: absolute;
-  top: -1px;
-  right: 18px;
-  left: 18px;
-  height: 2px;
-  content: "";
-  background: var(--color-gold);
 }
 
 .dresscode-cue span {
@@ -1646,11 +1651,6 @@ h1 {
     border-top: 1px solid rgba(169, 135, 55, 0.16);
   }
 
-  .dresscode-cue.is-target::before {
-    right: 0;
-    left: 0;
-  }
-
   .dresscode-copy {
     grid-column: auto;
     margin-top: 0;
@@ -1658,6 +1658,10 @@ h1 {
 
   .program-timeline {
     margin-top: 28px;
+  }
+
+  .schedule-note {
+    margin: 24px 0 0;
   }
 
   .program-timeline::before {
